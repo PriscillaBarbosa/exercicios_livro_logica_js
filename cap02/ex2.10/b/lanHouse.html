@@ -9,16 +9,17 @@
     <h1>Lan House JS</h1>
     <form>
         <p>Valor por 15min de Uso R$:
-            <input type="number" id="inValor" min="0" required> <!--para incluir o campo de texto pedindo o valor-->
+            <input type="number" id="inValor" min="0" step="0.01" required> <!--para incluir o campo de texto pedindo o valor-->
         </p>
         <p>
             Tempo de uso do Cliente:
-            <input type="time" id="inTempo" required> <!--para incluir campo de texto pedindo os horas e minutos utilizados-->
+            <input type="number" id="inTempo" min="0" required> <!--para incluir campo de texto pedindo os horas e minutos utilizados-->
         </p>
         <p>
             <input type="submit" value="Calcular Valor a Pagar">
         </p>
-        <h3 id="#valorApagar"></h3>
+        <h3></h3>
     </form>
+    <script src="./lanHouse.js"></script>
 </body>
 </html>
